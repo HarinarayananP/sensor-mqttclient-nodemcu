@@ -378,4 +378,3 @@ void publish_data(float value, char* name){
   }
   Serial.print("Heap: "); Serial.println(ESP.getFreeHeap()); //Low heap can cause problems
 }
-S
