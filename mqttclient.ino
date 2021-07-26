@@ -334,8 +334,8 @@ void loop() {
 
   
   // DELAY FOR 10 MINUTES
-//  ESP.deepSleep(60*1000*1000);  // ESP Hardware Deepsleep for power saving.
-delay(600e3);
+  //  ESP.deepSleep(60*1000*1000);  // ESP Hardware Deepsleep for power saving.
+  delay(60e3);
 }
 
 
@@ -378,3 +378,4 @@ void publish_data(float value, char* name){
   }
   Serial.print("Heap: "); Serial.println(ESP.getFreeHeap()); //Low heap can cause problems
 }
+S
