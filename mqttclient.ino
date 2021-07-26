@@ -3,7 +3,6 @@
 #define LED D0
 #define DHTTYPE DHT11
 
-#include "FS.h"
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <WiFiUdp.h>
@@ -25,9 +24,9 @@ const char* ssid = "********"; // WiFi SSID
 const char* password = "**************"; // WiFi Password
 
 // IBM Watson IOT - Device Credentials
-#define ORG "******" 
-#define DEVICE_TYPE "ESP32" 
-#define DEVICE_ID "**********" 
+#define ORG "****" 
+#define DEVICE_TYPE "*******" 
+#define DEVICE_ID "****" 
 #define TOKEN "**********" 
 
 
