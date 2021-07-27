@@ -31,7 +31,6 @@ const char* password = "**************"; // WiFi Password
 
 
 char server[] = ORG ".messaging.internetofthings.ibmcloud.com";
-char pubTopic1[] = "iot/sensor_node/";
 char authMethod[] = "use-token-auth";
 char token[] = TOKEN;
 char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;
@@ -370,7 +369,7 @@ void publish_data(float value, char* name){
   payload += value;
   payload += "\"}";
 
-  if (client.publish(pubTopic1 + name, (char*) payload.c_str())) {
+  if (client.publish("iot-2/evt/" + name + "/fmt/json", (char*) payload.c_str())) {
       Serial.println("Published");
   } else {
       Serial.println("Publish Failed");
